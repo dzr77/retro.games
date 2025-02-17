@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/icon" href="imagens/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogos - RetroGames</title>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="imagens/icon.png" alt="RetroGames" class="logo-icon">
+        RetroGames
+      </a>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Início</a>
+        <div class="dropdown">
+          <button class="nav-link">Consoles</button>
+          <div class="dropdown-content">
+            <a href="jogos.html">Nintendo</a>
+            <a href="jogos.html">Mega Drive</a>
+            <a href="jogos.html">PlayStation</a>
+          </div>
+        </div>
+        <a href="jogos.html" class="nav-link">Jogos</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container py-16">
+    <h1 class="text-center mb-12">Biblioteca de Jogos</h1>
+
+    <!-- Filtros -->
+    <div class="filters mb-8">
+      <select class="filter-select">
+        <option>Console</option>
+        <option>NES</option>
+        <option>Mega Drive</option>
+        <option>PlayStation</option>
+      </select>
+      <select class="filter-select">
+        <option>Gênero</option>
+        <option>Ação</option>
+        <option>Aventura</option>
+        <option>RPG</option>
+      </select>
+      <select class="filter-select">
+        <option>Ordenar por</option>
+        <option>Mais populares</option>
+        <option>Lançamento</option>
+        <option>Alfabético</option>
+      </select>
+    </div>
+
+    <!-- Grid de Jogos -->
+    <div class="games-grid">
+      <!-- Card 1 - Super Mario -->
+      <div class="retro-card-games">
+        <div class="video-container">
+          <img src="imagens/supermariobros3.jpg" 
+               class="video-poster"
+               alt="Super Mario Bros 3"
+               loading="lazy">
+          <button class="play-button" 
+                  aria-label="Reproduzir vídeo"
+                  data-yt-id="https://www.youtube.com/embed/HU80R7jGanE?si=OMzLZ5T2BzVPFyl0">
+            <svg viewBox="0 0 24 24" width="48" height="48">
+              <path fill="currentColor" d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+          <iframe width="370" height="200" src="https://www.youtube.com/embed/HU80R7jGanE?si=OMzLZ5T2BzVPFyl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="youtube-embed"></div>
+        </div>
+        <h3>Super Mario Bros. 3</h3>
+        <p>Uma das maiores aventuras do Mario</p>
+        <div class="game-info">
+          <div class="rating">★ 4.9/5</div>
+          <span class="console">NES</span>
+        </div>
+      </div>
+
+      <!-- Card 2 - Resident Evil -->
+      <div class="retro-card-games">
+        <div class="video-container">
+          <img src="imagens/residentevil.jpg" 
+               class="video-poster"
+               alt="Resident Evil 4"
+               loading="lazy">
+          <button class="play-button" 
+                  aria-label="Reproduzir vídeo"
+                  data-yt-id="https://youtu.be/oiVrQyPQe3k">
+            <svg viewBox="0 0 24 24" width="48" height="48">
+              <path fill="currentColor" d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+          <iframe width="370" height="200" src="https://www.youtube.com/embed/1KTghW30ZuY?si=kjGcaF68TBxgHQKe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="youtube-embed"></div>
+        </div>
+        <h3>Resident Evil 4</h3>
+        <p>Um dos sucessos do PlayStation 2</p>
+        <div class="game-info">
+          <div class="rating">★ 4.9/5</div>
+          <span class="console">PS2</span>
+        </div>
+      </div>
+
+      <!-- Card 3 - Sonic -->
+      <div class="retro-card-games">
+        <div class="video-container">
+          <img src="imagens/sonicmegadrive.jpg" 
+               class="video-poster"
+               alt="Sonic Mega Drive"
+               loading="lazy">
+          <button class="play-button" 
+                  aria-label="Reproduzir vídeo"
+                  data-yt-id="https://youtu.be/7zwF8gZ7g2s">
+            <svg viewBox="0 0 24 24" width="48" height="48">
+              <path fill="currentColor" d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+          <iframe width="370" height="200" src="https://www.youtube.com/embed/gjDanVVS5EI?si=nNWlT6yqTtepbS-e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="youtube-embed"></div>
+        </div>
+        <h3>Sonic Mega Drive</h3>
+        <p>É o Shadow cara, o Shadow!</p>
+        <div class="game-info">
+          <div class="rating">★ 4.9/5</div>
+          <span class="console">SEGA MEGA DRIVE</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>RetroGames</h3>
+          <p>Sua fonte definitiva de jogos retrô e clássicos inesquecíveis.</p>
+        </div>
+        <div>
+          <h3>Links Úteis</h3>
+          <ul>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="https://www.museudovideogame.org.br/" target="_blank">Museu do Videogame</a></li>
+            <li><a href="#politica-privacidade">Política de Privacidade</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <ul>
+            <li>Email: gabriel.diogenes@discente.ifac.edu.br</li>
+            <li>Tel: (68) 99912-8488</li>
+            <li>Rio Branco, Acre</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.play-button').forEach(button => {
+      button.addEventListener('click', function() {
+        const container = this.closest('.video-container');
+        const poster = container.querySelector('.video-poster');
+        const embedDiv = container.querySelector('.youtube-embed');
+        const videoId = this.dataset.ytId;
+
+        // Cria o player do YouTube
+        embedDiv.innerHTML = `
+          <iframe 
+            src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        `;
+
+        // Esconde elementos
+        poster.style.display = 'none';
+        this.style.display = 'none';
+        embedDiv.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>

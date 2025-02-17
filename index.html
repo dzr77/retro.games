@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/icon" href="imagens/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RetroGames - Jogos Clássicos</title>
+    <meta
+      name="description"
+      content="Sua fonte definitiva de jogos retrô e clássicos inesquecíveis"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="imagens/icon.png"
+            alt="RetroGames"
+            class="logo-icon"
+          />
+          RetroGames
+        </a>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Início</a>
+          <div class="dropdown">
+            <button class="nav-link">Consoles</button>
+            <div class="dropdown-content">
+              <a href="jogos.html">Nintendo</a>
+              <a href="jogos.html">Mega Drive</a>
+              <a href="jogos.html">PlayStation</a>
+            </div>
+          </div>
+          <a href="jogos.html" class="nav-link">Jogos</a>
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <!-- Exibição do nome do usuário -->
+          <div id="user-greeting" class="nav-link" style="display: none;">
+            Olá, <span id="user-name"></span>
+            <button id="logout-btn">Sair</button>
+          </div>
+          <!-- Botão de Login -->
+          <a href="javascript:void(0);" class="nav-link" id="login-btn">Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- EFEITO CRT -->
+    <div class="arcade-modal">
+      <div class="crt-overlay"></div>
+      <div class="scanlines"></div>
+      <iframe...></iframe>
+    </div>
+
+    <!-- Janela de Login -->
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Usuário:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit" class="retro-button">Entrar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Para evitar que o conteúdo fique oculto atrás da navbar fixa -->
+    <div style="padding-top: 100px;"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img
+        src="imagens/imgmenu.avif"
+        alt="Jogos Retrô"
+        useMap="#hero-map"
+      />
+      <map name="hero-map">
+        <area
+          shape="rect"
+          coords="100,100,400,300"
+          href="jogos.html?categoria=destaque"
+          alt="Jogos em Destaque"
+        />
+      </map>
+      <div class="hero-content">
+        <h1>RetroGames</h1>
+        <p>Reviva os clássicos que marcaram época</p>
+        <a href="jogos.html" class="retro-button">Ver Jogos</a>
+      </div>
+    </section>
+
+    <!-- Consoles Section -->
+    <section class="consoles">
+      <div class="container">
+        <h2>Consoles Clássicos</h2>
+        <div class="console-grid">
+          <div class="retro-card">
+            <img
+              src="imagens/NES.png"
+              alt="Nintendo Entertainment System"
+            />
+            <h3>Nintendo Entertainment System</h3>
+            <p>
+              O lendário console de 8-bits que revolucionou os videogames
+            </p>
+            <a href="jogos.html" class="retro-button">Ver jogos →</a>
+          </div>
+          <div class="retro-card">
+            <img
+              src="imagens/megadrive.jpeg"
+              alt="Sega Mega Drive"
+            />
+            <h3>Sega Mega Drive</h3>
+            <p>
+              O 16-bits que trouxe Sonic e muitos outros clássicos
+            </p>
+            <a href="jogos.html" class="retro-button">Ver jogos →</a>
+          </div>
+          <div class="retro-card">
+            <img
+              src="imagens/imgtvstubao.avif"
+              alt="PlayStation"
+            />
+            <h3>PlayStation</h3>
+            <p>
+              Os primeiros PlayStations e sua biblioteca incrível de jogos
+            </p>
+            <a href="jogos.html" class="retro-button">Ver jogos →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compatibility Table -->
+    <section class="compatibility">
+      <div class="container">
+        <h2>Compatibilidade</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Console</th>
+                <th>Região</th>
+                <th>Voltagem</th>
+                <th>Saída de Vídeo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>NES</td>
+                <td>NTSC/PAL-M</td>
+                <td>110V</td>
+                <td>RF/AV</td>
+              </tr>
+              <tr>
+                <td>Mega Drive</td>
+                <td>NTSC/PAL-M</td>
+                <td>110V/220V</td>
+                <td>RF/AV</td>
+              </tr>
+              <tr>
+                <td>PlayStation</td>
+                <td>Multiregião</td>
+                <td>110V/220V</td>
+                <td>AV/SCART</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>RetroGames</h3>
+            <p>
+              Sua fonte definitiva de jogos retrô e clássicos inesquecíveis.
+            </p>
+          </div>
+          <div>
+            <h3>Links Úteis</h3>
+            <ul>
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li>
+                <a
+                  href="https://www.museudovideogame.org.br/"
+                  target="_blank"
+                  >Museu do Videogame</a
+                >
+              </li>
+              <li>
+                <a href="#politica-privacidade">Política de Privacidade</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contato</h3>
+            <ul>
+              <li>Email: gabriel.diogenes@discente.ifac.edu.br</li>
+              <li>Tel: (68) 99912-8488</li>
+              <li>Rio Branco, Acre</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
